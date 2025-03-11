@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <meta property="og:title" content="Wedding Invitation">
+    <meta property="og:description" content="Enno & Enggar's Wedding Invitation">
+    <meta property="og:image" content="gallery5.jpeg"> <!-- Specify the URL of your preview image -->
+    <meta property="og:image:width" content="50"> <!-- Width of the image in pixels -->
+    <meta property="og:image:height" content="50"> <!-- Height of the image in pixels -->
+    <link rel="icon" href="logo2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=La+Belle+Aurore&family=Marck+Script&family=Noto+Naskh+Arabic:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Updock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=La+Belle+Aurore&family=Marck+Script&family=Noto+Naskh+Arabic:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Updock&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="invitationCover" class="invitation-cover">
+        <div class="cover-content">
+            <p>THE WEDDING OF</p>
+            <p class="couple" id="coupleNames"></p>
+            <p>Dear</p>
+            <p class="guest"><span id="guestName"></span></p>
+            <button id="openButton"><i class="fas fa-book-open"></i> BUKA UNDANGAN</button>
+        </div>
+    </div>
+
+    <div id="invitationContent" class="invitation-content">
+        <nav>
+            <ul>
+                <li><a href="#section1"><i class="fas fa-home"></i></a></li>
+                <li><a href="#section4"><i class="fas fa-user"></i></a></li>
+                <li><a href="#section5"><i class="fas fa-calendar"></i></a></li>
+                <li><a href="#section7"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="#section8"><i class="fas fa-gift"></i></a></li>
+            </ul>
+        </nav>
+
+
+        <div class="section fade-in" id="section1">
+            <div class="section1-content">
+                <img src="couple.png" alt="couple image">
+                <div class="flower-decoration fade-slide">
+                    <img src="couple-flower.png" alt="flower decoration">
+                </div>
+                <!-- Lottie Birds Animation -->
+                <div id="birds-animation" class="lottie-container"></div>
+                <p>THE WEDDING OF</p>
+                <h1>Enno & Enggar</h1>
+                <p>10.04.2025</p>
+                <button id="goToSection3">Save the Date</button>
+            </div>
+        </div>
+
+
+        <div class="section" id="section2">
+            <div class="section2-content">
+                <!-- Vintage Frame -->
+                <div class="frame-container fade-slide">
+                    <img src="vintage.png" alt="Vintage Frame">
+                    <div class="text">E E</div>
+                </div>
+        
+                <!-- Quran Verse -->
+                <div class="quran-verse">
+                    <p class="translation fade-slide">Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+                    <p class="surah fade-slide">Surah Ar-Rum, 30:21</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section4">
+            <div class="section4-content">
+                <h3 class="fade-slide section4-judul">Kedua Mempelai</h3>
+                <div class="profile-container">
+                    <div class="profile">
+                        <img src="husband.png" alt="Husband Profile" class="fade-slide">
+                        <div class="profile-flower fade-slide">
+                            <img src="profile-flower.png" alt="Flower Decoration">
+                        </div>
+                        <div class="profile-info fade-slide">
+                            <h3>Ennovendra Akbar Kusuma Pratidina, S. Tr., Pel</h3>
+                            <p>Putra pertama dari Bapak Ahmad Khotib dan Ibu Leli Agus Darwanti</p>
+                            <a href="https://www.instagram.com/ennovendra?igsh=MTFlZHRtczEwd28yaw==" target="_blank" class="instagram-button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="wife.png" alt="Wife Profile" class="fade-slide">
+                        <div class="profile-flower fade-slide">
+                            <img src="profile-flower.png" alt="Flower Decoration">
+                        </div>
+                        <div class="profile-info fade-slide">
+                            <h3>Enggar Dwi Rahayuningsih, S. E</h3>
+                            <p>Putri kedua dari Bapak Munadji dan Ibu Suyatun</p>
+                            <a href="https://www.instagram.com/enggardrn?igsh=MWs5MDk2N2drMDU4bQ==" target="_blank" class="instagram-button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="section3-content">
+                <p class="fade-slide">MENUJU HARI BAHAGIA</p>
+                <div id="countdown">
+                    <div class="unit fade-slide">
+                        <span class="number" id="days"></span>
+                        <span class="label">Hari</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="hours"></span>
+                        <span class="label">Jam</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="minutes"></span>
+                        <span class="label">Menit</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="seconds"></span>
+                        <span class="label">Detik</span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="section" id="section5">
+            <div class="wedding-detail">
+                <img src="merak.png" alt="merak" class="fade-slide merak">
+                <h2 class="fade-slide">With Love</h2>
+                <p class="fade-slide">Dengan segala kerendahan hati dan dengan ucapan syukur atas karunia Tuhan, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami yang akan dilaksanakan pada:</p>
+                <div class="akad-nikah fade-slide">
+                    <div class="event-layer">
+                        <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                        <h3>Akad Nikah</h3>
+                        <img src="line.png" alt="line" class="event-line">
+                        <p><i class="fas fa-calendar-alt"></i> Kamis, 10 April 2025</p>
+                        <p><i class="fas fa-clock"></i> 15:00 WIB</p>
+                        <img src="line_map.png" alt="line_map" class="event-line">
+                        <p><i class="fas fa-map-marker-alt"></i> Rumah mempelai wanita</p>
+                        <!-- <p><i class="fas fa-map-pin"></i> Dusun Manis RT4 RW1, Desa Ciputat, Kec. Ciawigebang, Kab. Kuningan</p>
+                        <a href="https://maps.app.goo.gl/TQrNuPz8e85k53Xy9" target="_blank" class="location-button">
+                            <i class="fas fa-map-marker-alt"></i> Lokasi Acara
+                        </a> -->
+                    </div>
+                </div>                
+                <div class="resepsi fade-slide">
+                    <div class="event-layer">
+                        <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                        <h3>Resepsi</h3>
+                        <img src="line.png" alt="line" class="event-line">
+                        <p><i class="fas fa-calendar-alt"></i> Jum'at, 11 April 2025</p>
+                        <p><i class="fas fa-clock"></i> 12:30 - 15.00 WIB</p>
+                        <img src="line_map.png" alt="line_map" class="event-line">
+                        <p><i class="fas fa-map-marker-alt"></i> Rumah mempelai wanita</p>
+                        <p><i class="fas fa-map-pin"></i> Dusun Secang, Desa Pojok, Kec. Campurdarat, Kab. Tulungagung</p>
+                        <a href="https://maps.app.goo.gl/vp63osD6wmx5KY478" target="_blank" class="location-button">
+                            <i class="fas fa-map-marker-alt"></i> Lokasi Acara
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="love-story" id="love-story">
+            <h2 class="title fade-slide">Our Love Story</h2>
+            <div class="story">
+                <div class="story-card meet fade-slide">
+                    <img src="pertemuan.jpeg" alt="Pertemuan" class="meet-img">
+                    <h3>PERTEMUAN</h3>
+                    <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                    <p>
+                        Tidak ada yang kebetulan di dunia ini, semua sudah tersusun rapi oleh sang maha kuasa. Kita tidak bisa memilih kepada siapa kita akan jatuh cinta.  
+                        Kami bertemu pada bulan November tahun 2022 dengan perantara orang tua Mas Enno dengan salah satu keluarga saya. Dari perbincangan tersebut, orang tua Mas Enno mengajak bertemu dengan dalil perkenalan kami berdua.
+                    </p>
+                </div>
+                <div class="story-card closer fade-slide">
+                    <img src="pendekatan.jpeg" alt="Pendekatan" class="meet-img">
+                    <h3>PENDEKATAN</h3>
+                    <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                    <p>
+                        Katanya cinta dapat tumbuh dengan kebersamaan, seiring berjalannya waktu kami semakin dekat.  
+                        Kami LDR karena berjarak cukup jauh, buruknya komunikasi dan sama-sama sibuk bekerja. Kami sempat lost contact berbulan-bulan dan pada akhirnya di bulan Desember 2023, takdir mendekatkan kami lagi.
+                    </p>
+                </div>
+                <div class="story-card engaged fade-slide">
+                    <img src="lamaran.jpeg" alt="Lamaran" class="meet-img">
+                    <h3>LAMARAN</h3>
+                    <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                    <p>
+                        Kehendak-Nya menuntun kami pada sebuah pertemuan keluarga yang tak pernah disangka hingga akhirnya membawa kami pada sebuah ikatan suci yang dicintai-Nya.  
+                        Kami melangsungkan lamaran di bulan Februari tahun 2025. Kami tidak punya tanggal jadian, tapi Alhamdulillah kami punya tanggal lamaran.
+                    </p>
+                </div>
+                <div class="story-card married fade-slide">
+                    <h3>MENIKAH</h3>
+                    <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                    <p>
+                        Percayalah, bukan karena bertemu lalu berjodoh, tapi karena berjodohlah kami dipertemukan.  
+                        Kami memutuskan untuk mengikrarkan janji suci pernikahan kami di bulan April ini, insyaallah sebagaimana yang pernah dikatakan oleh Sayyidina Ali bin Abi Thalib:  
+                        <em>"Apa yang menjadi takdirmu akan menemukan jalannya untuk menemukanmu."</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section" id="section6">
+            <h2 class="gallery-title fade-slide">Photo Gallery</h2>
+            <div class="gallery fade-slide">
+                <img src="gallery-photos/gallery1.jpeg" alt="Gallery Photo 1" class="fade-slide">
+                <img src="gallery-photos/gallery2.jpeg" alt="Gallery Photo 2" class="fade-slide">
+                <img src="gallery-photos/gallery3.jpeg" alt="Gallery Photo 3" class="fade-slide">
+                <img src="gallery-photos/gallery4.jpeg" alt="Gallery Photo 4" class="fade-slide">
+                <img src="gallery-photos/gallery5.jpeg" alt="Gallery Photo 5" class="fade-slide">
+                <img src="gallery-photos/gallery6.jpeg" alt="Gallery Photo 6" class="fade-slide">
+                <img src="gallery-photos/gallery7.jpeg" alt="Gallery Photo 7" class="fade-slide">
+                <img src="gallery-photos/gallery8.jpeg" alt="Gallery Photo 8" class="fade-slide">
+                <img src="gallery-photos/gallery9.jpeg" alt="Gallery Photo 9" class="fade-slide">
+                <img src="gallery-photos/gallery10.jpeg" alt="Gallery Photo 10" class="fade-slide">
+                <img src="gallery-photos/gallery11.jpeg" alt="Gallery Photo 11" class="fade-slide">
+                <img src="gallery-photos/gallery12.jpeg" alt="Gallery Photo 12" class="fade-slide">
+                <img src="gallery-photos/gallery13.jpeg" alt="Gallery Photo 13" class="fade-slide">
+                <img src="gallery-photos/gallery14.jpeg" alt="Gallery Photo 14" class="fade-slide">
+                <img src="gallery-photos/gallery15.jpeg" alt="Gallery Photo 15" class="fade-slide">
+                <img src="gallery-photos/gallery16.jpeg" alt="Gallery Photo 16" class="fade-slide">
+                <img src="gallery-photos/gallery17.jpeg" alt="Gallery Photo 17" class="fade-slide">
+                <img src="gallery-photos/gallery18.jpeg" alt="Gallery Photo 18" class="fade-slide">
+                <img src="gallery-photos/gallery19.jpeg" alt="Gallery Photo 19" class="fade-slide">
+                <img src="gallery-photos/gallery20.jpeg" alt="Gallery Photo 20" class="fade-slide">
+                <img src="gallery-photos/gallery21.jpeg" alt="Gallery Photo 21" class="fade-slide">
+                <img src="gallery-photos/gallery23.jpeg" alt="Gallery Photo 22" class="fade-slide">
+                <img src="gallery-photos/gallery22.jpeg" alt="Gallery Photo 23" class="fade-slide">
+                <img src="gallery-photos/gallery24.jpeg" alt="Gallery Photo 24" class="fade-slide">
+                <img src="gallery-photos/gallery25.jpeg" alt="Gallery Photo 25" class="fade-slide">
+                <img src="gallery-photos/gallery26.jpeg" alt="Gallery Photo 26" class="fade-slide">
+                <img src="gallery-photos/gallery27.jpeg" alt="Gallery Photo 27" class="fade-slide">
+                <img src="gallery-photos/gallery28.jpeg" alt="Gallery Photo 28" class="fade-slide">
+            </div>
+        </div>
+
+        <!-- Modal for Fullscreen -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+
+        <div class="section" id="section8">
+            <div class="gift-details">
+                    <h2 class="fade-slide">Wedding Gift</h2>
+                    <p class="fade-slide">Jika ingin memberikan hadiah pernikahan, Anda dapat melakukannya melalui nomor rekening berikut:</p>
+                <div class="bank-container">
+                    <div class="bank-item">
+                        <img src="bri.png" alt="Logo Bank" class="bank-logo1 fade-slide">
+                        <img src="chip.png" alt="chip" class="fade-slide chip">
+                        <p class="fade-slide account-name">Enggar Dwi RAhayuningsih</p>
+                        <p class="bank-number fade-slide">011001085857500</p>
+                        <button id="copyButton" class="copyButton fade-slide"><i class="fas fa-copy"></i> Copy</button>
+                    </div>
+                    <!-- <div class="bank-item">
+                        <img src="dana_logo.png" alt="Logo Bank" class="bank-logo2 fade-slide">
+                        <img src="chip.png" alt="chip" class="fade-slide chip">
+                        <p class="account-name fade-slide">Muhamad Jaelani</p>
+                        <p class="bank-number fade-slide">089660853334</p>
+                        <button id="copyButton" class="copyButton fade-slide"><i class="fas fa-copy"></i> Copy</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+            <div class="section" id="section7">
+                <div class="section7-content">
+                    <h2 class="fade-slide">Wishes</h2>
+                    <p class="fade-slide">Berikan ucapan harapan dan do'a kepada kedua mempelai</p>
+                    <form id="messageForm" action="https://enno-dan-enggar.glitch.me/messages" method="POST" class="fade-slide">
+                        <input type="text" id="formGuestName" name="name" placeholder="Your Name" required>
+                        <textarea id="guestMessage" name="message" rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit">KIRIM</button>
+                    </form>
+                    <div id="messageList" class="fade-slide"></div>
+                </div>
+            </div>
+
+        <div class="thank-you">
+            <div class="thank-you-content">
+                <!-- Vintage Frame -->
+                <div class="frame-container fade-slide">
+                    <img src="vintage.png" alt="Vintage Frame">
+                    <div class="text">E E</div>
+                </div>
+                <img src="couple2.png" alt="we are happy" class="fade-slide thank-you-image">
+                <div class="flower-decoration fade-slide">
+                    <img src="couple-flower.png" alt="flower decoration">
+                </div>
+                <p class="fade-slide">Merupakan suatu kehormatan & kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i hadir untuk memberikan doa restunya untuk keberkahan pernikahan kami.</p>
+                <h2 class="fade-slide couple-name">Enno & Enggar</h2>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="logo fade-slide">
+                    <img src="nc logo.png" alt="Logo" />
+                </div>
+                <div class="social-media-ncp fade-slide">
+                    <a href="https://www.facebook.com/profile.php?id=61560664461271&mibextid=LQQJ4d" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nicwaproject?igsh=enk4YWxoa24zNzY5&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+6285974176110" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://nicwaproject.github.io/NicwaProject-Store/" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+    <div id="audioControl">
+        <img id="playPauseButton" src="play-button.png" alt="Play" class="play-btn">
+    </div>
+</div>
+
+<audio id="backgroundMusic" src="Purity (Instrumental Version).mp3"></audio> <!-- Change this to the path of your music file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
