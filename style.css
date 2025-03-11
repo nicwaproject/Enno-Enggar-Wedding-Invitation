@@ -4,8 +4,8 @@ body {
 }
 
 :root {
-    --primary-color: #9F7355;
-    --background-color: rgba(159, 115, 85, 0.8);
+    --primary-color: #7B5446;
+    --background-color: rgba(123, 84, 70, 0.7);
     --background-black: rgba(0, 0, 0, 0.5);
     --background-white: rgba(255, 255, 255, 0.3);
     --primari-font: "Updock", cursive;
