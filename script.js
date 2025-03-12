@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Countdown Timer Logic
     function calculateCountdown() {
-        const weddingDate = new Date('2025-04-21T11:00:00');
+        const weddingDate = new Date('2025-04-11T12:00:00');
         const currentDate = new Date();
         let timeRemaining = weddingDate - currentDate;
 
